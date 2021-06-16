@@ -303,7 +303,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="Back", callback_data="help_back"),
                                 InlineKeyboardButton(
-                                    text="Group", url="https://t.me/grup_anime_indo"
+                                    text="Group", url="https://t.me/grupwibuindonesia"
                                 )]]
                 ),
             )
