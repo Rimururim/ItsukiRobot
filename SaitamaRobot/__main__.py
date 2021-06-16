@@ -81,12 +81,12 @@ Watashi wa Itsuki Nakano ✨ desu.
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ sᴜᴍᴍᴏɴ ➕️", url="t.me/gojou_xbot?startgroup=true"),
+            text="➕️ sᴜᴍᴍᴏɴ ➕️", url="t.me/shuna_robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="yone_"),
         InlineKeyboardButton(
-            text="ɢʀᴏᴜᴘ", url=f"https://t.me/grup_anime_indo"
+            text="ɢʀᴏᴜᴘ", url=f"https://t.me/grupwibuindonesia"
         ),
     ],
     [
@@ -96,8 +96,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hai, saya [itsuki](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg) 
-Klik tombol di bawah untuk mendapatkan dokumentasi tentang modul tertentu.
+Hai, Aku Shuna [itsuki](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg) 
+Tekan tombol di bawah ini untuk informasi tentang perintah bot dibawah ini.
 """
 
 yone_IMG = "https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg"
@@ -351,15 +351,15 @@ def yone_about_callback(update, context):
     if query.data == "yone_":
         query.message.edit_text(
             text="""
-ℹ️ **Tentang Bot Itsuki.** 
+ℹ️ **Tentang Bot Shuna.** 
 
 Hai
 
-*Itsuki* adalah bot pengelola grup bertema anime.
+*Shuna* adalah bot pengelola grup bertema anime.
 
-*Itsuki* memiliki fungsi mengelola Grup seperti *Anti-Flood*, *Blacklist* dll yang dapat membantu grup Anda dari spammer dan kang toxic.
+*Shuna* memiliki fungsi mengelola Grup seperti *Anti-Flood*, *Blacklist* dll yang dapat membantu grup Anda dari spammer dan toxic.
 
-Join juga grup kami *Anime Lovers Indo* atau klik tombol *Grup* dibawah ini.
+Join juga grup kami *Grup wibu Indo* atau klik tombol *Grup* dibawah ini.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -368,7 +368,7 @@ Join juga grup kami *Anime Lovers Indo* atau klik tombol *Grup* dibawah ini.
                  [
                     InlineKeyboardButton(text="Kembali", callback_data="yone_back"),
                                 InlineKeyboardButton(
-                                    text="Grup", url="https://t.me/grup_anime_indo"
+                                    text="Grup", url="https://t.me/grupwibuindonesia"
                                 )
                  ]
                 ]
@@ -464,7 +464,7 @@ def get_help(update: Update, context: CallbackContext):
             InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="help_back"),
                                 InlineKeyboardButton(
-                                    text="Group", url="https://t.me/grup_anime_indo"
+                                    text="Group", url="https://t.me/grupwibuindonesia"
                                 )]]
             ),
         )
@@ -688,7 +688,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
