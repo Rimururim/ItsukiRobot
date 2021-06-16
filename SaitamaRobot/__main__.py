@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Yo ❤ [anta](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg)
+Yo ❤ [anta](https://telegra.ph/file/aa5ec8ef5540de0a31325.jpg)
 Saya adalah Shuna Tempest❤ .
 """
 
@@ -96,11 +96,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hai, Aku Shuna [itsuki](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg) 
+Hai, Aku [Shuna](https://telegra.ph/file/aa5ec8ef5540de0a31325.jpg)
 Tekan tombol di bawah ini untuk informasi tentang perintah bot dibawah ini.
 """
 
-yone_IMG = "https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg"
+yone_IMG = "https://telegra.ph/file/aa5ec8ef5540de0a31325.jpg"
 
 DONATE_STRING = """Soon."""
 
