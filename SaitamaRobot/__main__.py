@@ -74,8 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Yahho [,](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg)
-Watashi wa Itsuki Nakano ✨ desu.
+Yo ❤ [anta](https://telegra.ph/file/fcbeb3cf5a203e0acea18.jpg)
+Saya adalah Shuna Tempest❤ .
 """
 
 buttons = [
